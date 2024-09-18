@@ -1,6 +1,4 @@
-# Laboratorio1_ctipto
+# Laboratorios_ctipto
 
-# Repositorio con codigos  e imagenes pertenecientes al informe del laboratorio 1 de criptografia
+# Repositorio con codigos  e imagenes pertenecientes al informes del laboratorio de criptografia
 
-# ENn casp de ser necesario instalar scapy para el uso de los codigos
-pip install scapy
