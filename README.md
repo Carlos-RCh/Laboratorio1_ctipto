@@ -1,4 +1,4 @@
 # Laboratorios_ctipto
 
-# Repositorio con codigos  e imagenes pertenecientes al informes del laboratorio de criptografia
+# Repositorio con codigos e imagenes pertenecientes a los informes del laboratorio de criptografia realizados durante el semetre. 
 
