@@ -1,0 +1,22 @@
+FROM ubuntu:22.10
+
+COPY sources.list /etc/apt/sources.list
+
+RUN apt-get update && apt-get install -y \
+    tshark \
+    openssh-client \
+    openssh-server
+
+
+RUN mkdir -p /var/run/sshd
+
+# Configurar el usuario "prueba" y habilitar root con contraseña
+RUN useradd -m prueba && \
+    echo 'prueba:prueba' | chpasswd && \
+    sed -i 's/PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config && \
+    echo 'root:root' | chpasswd
+
+EXPOSE 22
+
+CMD ["/usr/sbin/sshd", "-D"]
+
